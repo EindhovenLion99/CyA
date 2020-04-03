@@ -1,0 +1,14 @@
+]0;~/Practica 4/Archivos[01;34m~/Practica 4/Archivos[00m$ make
+g++ -Wall -g -std=c++11 main_uncomment.cpp diagram_t.cpp phase_t.cpp -o Remover
+]0;~/Practica 4/Archivos[01;34m~/Practica 4/Archivos[00m$ bash scrip.sh 
+
+*hey
+
+int main(){
+  cout << "Ejemplo de / o //"; 
+} 
+
+
+2 comentarios // eliminados
+1 comentarios /* */ eliminados
+]0;~/Practica 4/Archivos[01;34m~/Practica 4/Archivos[00m$ 

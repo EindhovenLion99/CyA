@@ -1,0 +1,110 @@
+#include <cmath>
+#include "rational_t.hpp"
+//definicion de los metodos de la clase rational_t
+rational_t::rational_t(const int n, const int d)//esto es un metodo para inicializar los atributos num_ y dem_ pasadole del main los parametro n y d
+{ //assert(d != 0); lo he comentado para hacer la modificacion
+  num_ = n, den_ = d;
+}
+
+double rational_t::value() const//METODO PARA VER EL VALOR DECIMAL DEL NUMERO FRACCIONARIO
+{ return double(get_num()) / get_den();
+}
+
+rational_t rational_t::opposite() const//CALCULA EL OPUESTO
+{ return rational_t((-1)*get_num(), get_den());
+}
+
+rational_t rational_t::reciprocal() const//CALCULA EL RECIPROCO
+{ return rational_t(get_den(), get_num());
+}
+//FASE II
+
+
+void rational_t::aescero() const//VERIFICA SI a ES CERO
+{ double precision;
+if (fabs(get_num()/get_den()) < precision ){
+    cout << "a es igual a cero" << endl;
+}
+ else{
+    cout << "a es distindo de cero" << endl;
+}
+}
+
+bool rational_t::equal(const rational_t& r, const double precision) const//COMPARA DOS NUMEROS FRACCIONARIOS Y VERIFICA SI SON IGUALES
+{bool comp;
+ if(fabs( (get_num()/get_den())-(r.get_num()/r.get_den()) ) < precision ) { 
+  comp= true;}
+else {
+  comp= false;}
+
+return comp;
+}
+
+bool rational_t::greater(const rational_t& r, const double precision) const//COMPARA DOS NUMEROS FRACCIONARIOS Y VERIFICA SI EL PRIMER NUMERO ES MAYOR QUE EL SEGUNDO
+{bool comp;
+if( (get_num()*r.get_den())-(r.get_num()*get_den())/get_den()*r.get_den() > precision ){
+comp= true;}
+else {
+comp= false;}
+return comp;
+}
+
+bool rational_t::less(const rational_t& r, const double precision) const
+{bool comp;
+if( (get_num()*r.get_den())-(r.get_num()*get_den())/get_den()*r.get_den() < (-1)*precision ){//COMPARA DOS NUMEROS FRACCIONARIOS Y VERIFICA SI EL PRIMERO ES MENOR QUE EL SEGUNDO
+comp= true;}
+else {
+comp= false;}
+return comp;
+}
+//FASE IV
+rational_t rational_t::add(const rational_t& r)
+{ return rational_t((get_num()*r.get_den())+(r.get_num()*get_den()),get_den()*r.get_den());
+
+}
+
+rational_t rational_t::substract(const rational_t& r)//SUMA DE FRACCIONES
+{ return rational_t((get_num()*r.get_den())-(r.get_num()*get_den()),get_den()*r.get_den());
+}
+
+rational_t rational_t::multiply(const rational_t& r)//RESTA DE FRANCIONES
+{return rational_t( get_num()*r.get_num(),r.get_den()*get_den() );
+}
+
+rational_t rational_t::divide(const rational_t& r)//MULTIPLICACION DE FRACCIONES
+{return rational_t( get_num()*r.get_den(),r.get_num()*get_den() );
+}
+
+//MODIFICACION EN EL AULA
+bool rational_t::indeterminacion(void)
+{bool cero;
+if (get_den() == 0){
+   cero = true;
+}
+else {
+   cero = false;  
+}
+return cero;
+}
+
+
+void rational_t::write(ostream& os) const//DIVISION DE FRACCIONES
+{ os << get_num() << "/" << get_den() << "=" << value() << endl;//transforma los parametros que pasamos del main a formato franccion"a/b" y en punto flotante
+}
+
+void rational_t::read(istream& is)//lee datos de entrada para asignar valores desde el teclado
+{ cout << "Numerador: ";
+  is >> num_;
+  cout << "Denominador: ";
+  is >> den_;
+  //assert(den_ != 0); lo he comentado para hacer la modificacion
+}
+
+
+
+
+while { //holamundo
+"/*hola*/" /*hol*a*/ if(i < j){
+  Cya;
+}
+}

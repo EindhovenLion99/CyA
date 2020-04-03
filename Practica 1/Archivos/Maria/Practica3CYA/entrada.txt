@@ -1,0 +1,2 @@
+9 { abc , bbcc , a , cab }
+7 { a , aa , aaa } 

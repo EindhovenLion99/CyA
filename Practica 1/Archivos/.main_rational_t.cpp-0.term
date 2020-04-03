@@ -1,0 +1,319 @@
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ ls
+fichero_entrada.txt  fichero_salida.txt  [0m[01;32mmain_rational_t[0m  main_rational_t.cpp  makefile  rational_t.cpp  rational_t.hpp
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ make[K[K[K[Kmake
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Kmain_rational_t.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kmain_rational_t.cpp:26:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rational_t[m[K’ has no member named ‘[01m[KFichero_E_S[m[K’
+         A.[01;31m[KFichero_E_S[m[K(Fich_Entrada, Fich_Salida, B);
+           [01;31m[K^~~~~~~~~~~[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear[1Pmake[2Pls
+fichero_entrada.txt  fichero_salida.txt  [0m[01;32mmain_rational_t[0m  main_rational_t.cpp  makefile  rational_t.cpp  rational_t.hpp
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ lsclear[1Pmake
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Kmain_rational_t.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kmain_rational_t.cpp:26:51:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar*[m[K’ to ‘[01m[Kchar[m[K’ [[01;31m[K-fpermissive[m[K]
+         A.Fichero_E_S(Fich_Entrada, Fich_Salida, B[01;31m[K)[m[K;
+                                                   [01;31m[K^[m[K
+In file included from [01m[Kmain_rational_t.cpp:6:0[m[K:
+[01m[Krational_t.hpp:44:10:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rational_t::Fichero_E_S(char, char, const rational_t&)[m[K’
+     void [01;36m[KFichero_E_S[m[K(char fich1, char fich2, const rational_t& r);
+          [01;36m[K^~~~~~~~~~~[m[K
+[01m[Kmain_rational_t.cpp:26:51:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar*[m[K’ to ‘[01m[Kchar[m[K’ [[01;31m[K-fpermissive[m[K]
+         A.Fichero_E_S(Fich_Entrada, Fich_Salida, B[01;31m[K)[m[K;
+                                                   [01;31m[K^[m[K
+In file included from [01m[Kmain_rational_t.cpp:6:0[m[K:
+[01m[Krational_t.hpp:44:10:[m[K [01;36m[Knote: [m[K  initializing argument 2 of ‘[01m[Kvoid rational_t::Fichero_E_S(char, char, const rational_t&)[m[K’
+     void [01;36m[KFichero_E_S[m[K(char fich1, char fich2, const rational_t& r);
+          [01;36m[K^~~~~~~~~~~[m[K
+[01m[Krational_t.cpp:[m[K In member function ‘[01m[Kvoid rational_t::Fichero_E_S(char, char, const rational_t&)[m[K’:
+[01m[Krational_t.cpp:21:32:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file1[m[K’ has initializer but incomplete type
+     ifstream file1(fich_Entrada[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Krational_t.cpp:22:31:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream file2[m[K’ has initializer but incomplete type
+     ofstream file2(fich_Salida[01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Krational_t.cpp:34:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile[m[K’ was not declared in this scope
+           while([01;31m[Kfile[m[K >> num1 >> d >> den1 >> num2 >> d >> den2)
+                 [01;31m[K^~~~[m[K
+[01m[Krational_t.cpp:34:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfileno[m[K’
+           while([01;36m[Kfile[m[K >> num1 >> d >> den1 >> num2 >> d >> den2)
+                 [01;36m[K^~~~[m[K
+                 [32m[Kfileno[m[K
+[01m[Krational_t.cpp:36:30:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               set_num(num1); [01;31m[KA[m[K.set_den(den1); b.set_num(num2); b.set_den(den2);
+                              [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:61:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2[01;31m[K)[m[K; b.set_den(den2);
+                                                             [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:28:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_num(int)[m[K’
+     void [01;36m[Kset_num[m[K(const int n)                 // Setters
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:36:78:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2); b.set_den(den2[01;31m[K)[m[K;
+                                                                              [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:31:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_den(int)[m[K’
+     void [01;36m[Kset_den[m[K(const int d)
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:43:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+               [01;31m[Ka[m[K.writ(file2); file2 << " "; b.writ(file2); file2 << endl << endl;
+               [01;31m[K^[m[K
+[01m[Krational_t.cpp:60:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile[m[K’ was not declared in this scope
+           [01;31m[Kfile[m[K.close();
+           [01;31m[K^~~~[m[K
+[01m[Krational_t.cpp:60:11:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfileno[m[K’
+           [01;36m[Kfile[m[K.close();
+           [01;36m[K^~~~[m[K
+           [32m[Kfileno[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear[1Pmake
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Krational_t.cpp:19:6:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Kvoid rational_t::Fichero_E_S(char, char, const rational_t&)[m[K’ does not match any in class ‘[01m[Krational_t[m[K’
+ void [01;31m[Krational_t[m[K::Fichero_E_S(char fich_Entrada, char fich_Salida, const rational_t& b)
+      [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:44:10:[m[K [01;31m[Kerror: [m[Kcandidate is: void rational_t::Fichero_E_S(char*, char*, const rational_t&)
+     void [01;31m[KFichero_E_S[m[K(char* fich1, char* fich2, const rational_t& r);
+          [01;31m[K^~~~~~~~~~~[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ make
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Krational_t.cpp:[m[K In member function ‘[01m[Kvoid rational_t::Fichero_E_S(char*, char*, const rational_t&)[m[K’:
+[01m[Krational_t.cpp:21:32:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file1[m[K’ has initializer but incomplete type
+     ifstream file1(fich_Entrada[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Krational_t.cpp:22:31:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream file2[m[K’ has initializer but incomplete type
+     ofstream file2(fich_Salida[01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Krational_t.cpp:34:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile[m[K’ was not declared in this scope
+           while([01;31m[Kfile[m[K >> num1 >> d >> den1 >> num2 >> d >> den2)
+                 [01;31m[K^~~~[m[K
+[01m[Krational_t.cpp:34:17:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfileno[m[K’
+           while([01;36m[Kfile[m[K >> num1 >> d >> den1 >> num2 >> d >> den2)
+                 [01;36m[K^~~~[m[K
+                 [32m[Kfileno[m[K
+[01m[Krational_t.cpp:36:30:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               set_num(num1); [01;31m[KA[m[K.set_den(den1); b.set_num(num2); b.set_den(den2);
+                              [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:61:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2[01;31m[K)[m[K; b.set_den(den2);
+                                                             [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:28:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_num(int)[m[K’
+     void [01;36m[Kset_num[m[K(const int n)                 // Setters
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:36:78:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2); b.set_den(den2[01;31m[K)[m[K;
+                                                                              [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:31:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_den(int)[m[K’
+     void [01;36m[Kset_den[m[K(const int d)
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:43:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+               [01;31m[Ka[m[K.writ(file2); file2 << " "; b.writ(file2); file2 << endl << endl;
+               [01;31m[K^[m[K
+[01m[Krational_t.cpp:60:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile[m[K’ was not declared in this scope
+           [01;31m[Kfile[m[K.close();
+           [01;31m[K^~~~[m[K
+[01m[Krational_t.cpp:60:11:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfileno[m[K’
+           [01;36m[Kfile[m[K.close();
+           [01;36m[K^~~~[m[K
+           [32m[Kfileno[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ makeclear
+[3J[H[2J]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear[1Pmake
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Krational_t.cpp:[m[K In member function ‘[01m[Kvoid rational_t::Fichero_E_S(char*, char*, const rational_t&)[m[K’:
+[01m[Krational_t.cpp:21:32:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file1[m[K’ has initializer but incomplete type
+     ifstream file1(fich_Entrada[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Krational_t.cpp:22:31:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream file2[m[K’ has initializer but incomplete type
+     ofstream file2(fich_Salida[01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:30:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               set_num(num1); [01;31m[KA[m[K.set_den(den1); b.set_num(num2); b.set_den(den2);
+                              [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:61:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2[01;31m[K)[m[K; b.set_den(den2);
+                                                             [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:28:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_num(int)[m[K’
+     void [01;36m[Kset_num[m[K(const int n)                 // Setters
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:36:78:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2); b.set_den(den2[01;31m[K)[m[K;
+                                                                              [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:31:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_den(int)[m[K’
+     void [01;36m[Kset_den[m[K(const int d)
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:43:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+               [01;31m[Ka[m[K.writ(file2); file2 << " "; b.writ(file2); file2 << endl << endl;
+               [01;31m[K^[m[K
+[01m[Krational_t.cpp:60:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile[m[K’ was not declared in this scope
+           [01;31m[Kfile[m[K.close();
+           [01;31m[K^~~~[m[K
+[01m[Krational_t.cpp:60:11:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kfileno[m[K’
+           [01;36m[Kfile[m[K.close();
+           [01;36m[K^~~~[m[K
+           [32m[Kfileno[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear[1Pmake
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Krational_t.cpp:[m[K In member function ‘[01m[Kvoid rational_t::Fichero_E_S(char*, char*, const rational_t&)[m[K’:
+[01m[Krational_t.cpp:21:32:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file1[m[K’ has initializer but incomplete type
+     ifstream file1(fich_Entrada[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Krational_t.cpp:22:31:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream file2[m[K’ has initializer but incomplete type
+     ofstream file2(fich_Salida[01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:30:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               set_num(num1); [01;31m[KA[m[K.set_den(den1); b.set_num(num2); b.set_den(den2);
+                              [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:61:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2[01;31m[K)[m[K; b.set_den(den2);
+                                                             [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:28:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_num(int)[m[K’
+     void [01;36m[Kset_num[m[K(const int n)                 // Setters
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:36:78:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); A.set_den(den1); b.set_num(num2); b.set_den(den2[01;31m[K)[m[K;
+                                                                              [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:31:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_den(int)[m[K’
+     void [01;36m[Kset_den[m[K(const int d)
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:43:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+               [01;31m[Ka[m[K.writ(file2); file2 << " "; b.writ(file2); file2 << endl << endl;
+               [01;31m[K^[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear[1Pmake
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Krational_t.cpp:[m[K In member function ‘[01m[Kvoid rational_t::Fichero_E_S(char*, char*, const rational_t&)[m[K’:
+[01m[Krational_t.cpp:21:32:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file1[m[K’ has initializer but incomplete type
+     ifstream file1(fich_Entrada[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Krational_t.cpp:22:31:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream file2[m[K’ has initializer but incomplete type
+     ofstream file2(fich_Salida[01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:59:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); set_den(den1); b.set_num(num2[01;31m[K)[m[K; b.set_den(den2);
+                                                           [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:28:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_num(int)[m[K’
+     void [01;36m[Kset_num[m[K(const int n)                 // Setters
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:36:76:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); set_den(den1); b.set_num(num2); b.set_den(den2[01;31m[K)[m[K;
+                                                                            [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:31:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_den(int)[m[K’
+     void [01;36m[Kset_den[m[K(const int d)
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:43:15:[m[K [01;31m[Kerror: [m[K‘[01m[Ka[m[K’ was not declared in this scope
+               [01;31m[Ka[m[K.writ(file2); file2 << " "; b.writ(file2); file2 << endl << endl;
+               [01;31m[K^[m[K
+[01m[Krational_t.cpp:47:18:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               if([01;31m[KA[m[K > b){ A.writ(file2); file2 << " es mayor que "; b.write(file2);}
+                  [01;31m[K^[m[K
+[01m[Krational_t.cpp:48:18:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               if([01;31m[KA[m[K < b){ A.writ(file2); file2 << " es menor que "; b.write(file2);}
+                  [01;31m[K^[m[K
+[01m[Krational_t.cpp:49:18:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               if([01;31m[KA[m[K == b){ A.writ(file2); file2 << " es igual que "; b.write(file2);}
+                  [01;31m[K^[m[K
+[01m[Krational_t.cpp:53:15:[m[K [01;31m[Kerror: [m[K‘[01m[KA[m[K’ was not declared in this scope
+               [01;31m[KA[m[K.writ(file2); file2 << " + "; b.writ(file2); file2 << " = "; sum.writ(file2); file2 << endl;
+               [01;31m[K^[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ make
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Kmain_rational_t.cpp:50:17:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K-Wcomment[m[K]
+               { /*
+                  
+[01m[Krational_t.cpp:[m[K In member function ‘[01m[Kvoid rational_t::Fichero_E_S(char*, char*, const rational_t&)[m[K’:
+[01m[Krational_t.cpp:21:32:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file1[m[K’ has initializer but incomplete type
+     ifstream file1(fich_Entrada[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Krational_t.cpp:22:31:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream file2[m[K’ has initializer but incomplete type
+     ofstream file2(fich_Salida[01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:59:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); set_den(den1); b.set_num(num2[01;31m[K)[m[K; b.set_den(den2);
+                                                           [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:28:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_num(int)[m[K’
+     void [01;36m[Kset_num[m[K(const int n)                 // Setters
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:36:76:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); set_den(den1); b.set_num(num2); b.set_den(den2[01;31m[K)[m[K;
+                                                                            [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:31:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_den(int)[m[K’
+     void [01;36m[Kset_den[m[K(const int d)
+          [01;36m[K^~~~~~~[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ clear[1Pmake
+g++ -Wall -g -std=c++11 main_rational_t.cpp rational_t.cpp -o main_rational_t
+[01m[Krational_t.cpp:[m[K In member function ‘[01m[Kvoid rational_t::Fichero_E_S(char*, char*, const rational_t&)[m[K’:
+[01m[Krational_t.cpp:21:32:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ifstream file1[m[K’ has initializer but incomplete type
+     ifstream file1(fich_Entrada[01;31m[K)[m[K;
+                                [01;31m[K^[m[K
+[01m[Krational_t.cpp:22:31:[m[K [01;31m[Kerror: [m[Kvariable ‘[01m[Kstd::ofstream file2[m[K’ has initializer but incomplete type
+     ofstream file2(fich_Salida[01;31m[K)[m[K;
+                               [01;31m[K^[m[K
+[01m[Krational_t.cpp:36:59:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); set_den(den1); b.set_num(num2[01;31m[K)[m[K; b.set_den(den2);
+                                                           [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:28:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_num(int)[m[K’
+     void [01;36m[Kset_num[m[K(const int n)                 // Setters
+          [01;36m[K^~~~~~~[m[K
+[01m[Krational_t.cpp:36:76:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst rational_t[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+               set_num(num1); set_den(den1); b.set_num(num2); b.set_den(den2[01;31m[K)[m[K;
+                                                                            [01;31m[K^[m[K
+In file included from [01m[Krational_t.cpp:1:0[m[K:
+[01m[Krational_t.hpp:31:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid rational_t::set_den(int)[m[K’
+     void [01;36m[Kset_den[m[K(const int d)
+          [01;36m[K^~~~~~~[m[K
+makefile:2: recipe for target 'main_rational_t' failed
+make: *** [main_rational_t] Error 1
+]0;~/Practica 1/Archivos[01;34m~/Practica 1/Archivos[00m$ 

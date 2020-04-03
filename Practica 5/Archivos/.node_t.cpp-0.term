@@ -1,0 +1,9 @@
+]0;~/Practica 5/Archivos[01;34m~/Practica 5/Archivos[00m$ ls
+ ER2Tree.cpp             makefile     node_t.h       post_f_t.h    pre_f_t.h
+'filein.txt file2.txt'   node_t.cpp   post_f_t.cpp   pre_f_t.cpp
+]0;~/Practica 5/Archivos[01;34m~/Practica 5/Archivos[00m$ rm filein.txt\ file2.txt 
+]0;~/Practica 5/Archivos[01;34m~/Practica 5/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 5/Archivos[01;34m~/Practica 5/Archivos[00m$ touch fiel[K[Klein.txt
+]0;~/Practica 5/Archivos[01;34m~/Practica 5/Archivos[00m$ touch file2.txt[K[K[K[K[K[Keout.txt
+]0;~/Practica 5/Archivos[01;34m~/Practica 5/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 5/Archivos[01;34m~/Practica 5/Archivos[00m$ 

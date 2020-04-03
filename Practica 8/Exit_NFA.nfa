@@ -1,0 +1,12 @@
+digraph NFA {
+	rankdir=LR;
+	node [ shape = none ]; "";
+	node [shape = doublecircle]; "f"
+	node [shape = circle];
+	"" -> "S"
+	"S" -> "A" [ label = "0"];
+	"A" -> "1" [ label = "1"];
+	"1" -> "A" [ label = "0"];
+	"A" -> "B" [ label = "0"];
+	"1" -> "B" [ label = "0"];
+}

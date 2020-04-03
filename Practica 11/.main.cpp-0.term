@@ -1,0 +1,32 @@
+]0;~/Practica 11[01;34m~/Practica 11[00m$ [K]0;~/Practica 11[01;34m~/Practica 11[00m$ [K]0;~/Practica 11[01;34m~/Practica 11[00m$ ls
+main.cpp
+]0;~/Practica 11[01;34m~/Practica 11[00m$ g++ main.cpp 
+]0;~/Practica 11[01;34m~/Practica 11[00m$ ./a.out 
+Introducir n: 5
+Ejemplo 1: 5
+]0;~/Practica 11[01;34m~/Practica 11[00m$ ./a.out [5@g++ main.cpp[C
+]0;~/Practica 11[01;34m~/Practica 11[00m$ g++ main.cpp [5P./a.out[C[5@g++ main.cpp[C[5P./a.out[C
+Introducir n: 5
+Ejemplo 2: 25
+]0;~/Practica 11[01;34m~/Practica 11[00m$ ./a.out [Kclear
+[3J[H[2J]0;~/Practica 11[01;34m~/Practica 11[00m$ clear./a.out [5@g++ main.cpp[C
+]0;~/Practica 11[01;34m~/Practica 11[00m$ g++ main.cpp [8Pclear
+[3J[H[2J]0;~/Practica 11[01;34m~/Practica 11[00m$ clearg++ main.cpp [8Pclear./a.out 
+Introducir n: 5
+Ejemplo 3: 15
+]0;~/Practica 11[01;34m~/Practica 11[00m$ ./a.out [3Pclearg++ main.cpp 
+]0;~/Practica 11[01;34m~/Practica 11[00m$ g++ main.cpp [5P./a.out[C[3Pclear./a.out 
+Introducir n: 5
+Ejemplo 4: 15
+]0;~/Practica 11[01;34m~/Practica 11[00m$ vlear
+bash: vlear: command not found
+]0;~/Practica 11[01;34m~/Practica 11[00m$ clear
+[3J[H[2J]0;~/Practica 11[01;34m~/Practica 11[00m$ clearvlear./a.out [5@g++ main.cpp[C
+]0;~/Practica 11[01;34m~/Practica 11[00m$ g++ main.cpp [8Pclearvlear./a.out 
+Introducir n: 5
+Ejemplo 2: 25
+]0;~/Practica 11[01;34m~/Practica 11[00m$ ./a.out [5@g++ main.cpp[C
+]0;~/Practica 11[01;34m~/Practica 11[00m$ g++ main.cpp [5P./a.out[C
+Introducir n: 5
+Ejemplo 3: 15
+]0;~/Practica 11[01;34m~/Practica 11[00m$ [K]0;~/Practica 11[01;34m~/Practica 11[00m$ 

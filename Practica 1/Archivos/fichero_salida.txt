@@ -1,0 +1,5 @@
+Concatenación (L1 * L2) = { doshola, dossapo, holahola, holasapo, sapohola, saposapo, }
+Concatenación (L1 * L2) = { doshola,, dossapo, hola,hola,, hola,sapo, sapo,hola,, sapo,sapo, }
+Concatenación (L1 * L2) = { doshola,, dossapo, hola,hola,, hola,sapo, sapo,hola,, sapo,sapo, }
+Concatenación (L1 * L2) = { doshola,, dossapo, hola,hola,, hola,sapo, sapo,hola,, sapo,sapo, }
+Concatenación (L1 * L2) = { doshola,, dossapo, hola,hola,, hola,sapo, sapo,hola,, sapo,sapo, }

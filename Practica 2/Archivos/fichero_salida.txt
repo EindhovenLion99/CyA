@@ -1,0 +1,14 @@
+WHILE
+PAL xd
+PAL silensiooooo
+INT 45
+FLOT 76.89
+IF
+DESCONOCIDO españa
+WHILE
+PAL xd
+PAL silensiooooo
+INT 45
+FLOT 76.89
+IF
+DESCONOCIDO españa

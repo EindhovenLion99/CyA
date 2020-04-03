@@ -1,0 +1,70 @@
+]0;~/Practica 2/Archivos[01;34m~/Practica 2/Archivos[00m$ g++ Analyzer.cpp 
+/tmp/ccU2ac4y.o: In function `main':
+Analyzer.cpp:(.text+0xa7): undefined reference to `analyzer_t::analyzer_t()'
+Analyzer.cpp:(.text+0xc7): undefined reference to `analyzer_t::Comparation(char*, char*)'
+collect2: error: ld returned 1 exit status
+]0;~/Practica 2/Archivos[01;34m~/Practica 2/Archivos[00m$ make
+g++ -Wall -g -std=c++11 Analyzer.cpp word_analyzer.cpp -o Analyzer
+[01m[Kword_analyzer.cpp:[m[K In constructor ‘[01m[Kanalyzer_t::analyzer_t()[m[K’:
+[01m[Kword_analyzer.cpp:42:34:[m[K [01;31m[Kerror: [m[K‘[01m[Klanguage_[m[K’ was not declared in this scope
+       set<string>::iterator it = [01;31m[Klanguage_[m[K.begin();
+                                  [01;31m[K^~~~~~~~~[m[K
+makefile:2: recipe for target 'Analyzer' failed
+make: *** [Analyzer] Error 1
+]0;~/Practica 2/Archivos[01;34m~/Practica 2/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 2/Archivos[01;34m~/Practica 2/Archivos[00m$ clear[1Pmake
+g++ -Wall -g -std=c++11 Analyzer.cpp word_analyzer.cpp -o Analyzer
+]0;~/Practica 2/Archivos[01;34m~/Practica 2/Archivos[00m$ ./a[KAnalyzer fichero_entrada.txt fichero_salida.txt 
+abstract
+assert
+boolean
+break
+byte
+case
+catch
+char
+class
+const
+continue
+default
+do
+double
+else
+enum
+extends
+final
+finally
+float
+for
+goto
+if
+implements
+import
+instanceof
+int
+interface
+long
+native
+new
+package
+private
+protected
+public
+return
+short
+static
+strictfp
+super
+switch
+synchronized
+this
+throw
+throws
+transient
+try
+void
+volatile
+while
+whileabstract
+]0;~/Practica 2/Archivos[01;34m~/Practica 2/Archivos[00m$ clear
+[3J[H[2J]0;~/Practica 2/Archivos[01;34m~/Practica 2/Archivos[00m$ 

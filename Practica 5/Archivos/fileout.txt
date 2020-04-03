@@ -1,0 +1,6 @@
+Infija: ((a|b)|c)
+Postfija: ab|c|
+Infija: (a&b*)
+Postfija: ab*&
+Infija: (b|d*)
+Postfija: bd*|
